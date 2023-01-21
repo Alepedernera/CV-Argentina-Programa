@@ -1,0 +1,67 @@
+.habilidades {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo-habilidades {
+    background-color: var(--background-navbar-color);
+    text-align: center;
+        
+}
+
+.titulo-habilidades{
+    color: var(--text-color-mobile);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.division1 {
+    position: relative;    
+    top: 2px;
+}
+
+.division2 {
+    transform: scaleY(-1);
+    top: -2px;   
+}
+
+#html5-icon {    
+    width: 120px;
+    margin: 40px;
+    box-shadow: 0 4px 10px gray;
+}
+
+#css-icon {
+    width: 100px;
+    margin: 40px;
+    box-shadow: 0 4px 10px gray;
+}
+
+#javascript-icon {
+    width: 135px;
+    margin: 40px;
+    box-shadow: 0 4px 10px gray;
+}
+
+@media(min-width: 950px) {
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cuerpo-habilidades {
+        background-color: var(--background-navbar-color);
+        text-align: center;
+            
+    }
+    
+    .titulo-habilidades{
+        color: var(--text-color-mobile);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;    
+    }
+}

@@ -1,0 +1,116 @@
+.titulo-experiencia {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.experiencia-fecha {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.experiencia-compañia {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.experiencia-posicion {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.experiencia-descripcion {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.experiencia {
+    padding: 25px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 950px) {
+    .title-experiencia {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        padding-top: 0;
+    }
+   
+    .experiencia-fecha {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .experiencia-compañia {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    
+    .experiencia-posicion {
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .experiencia-descripcion {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .experiencia {
+        padding: 0;        
+    }
+
+    .experiencia_izq {
+        text-align: right;
+    }
+
+    .grid-experiencia{
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        gap: 20px 70px;
+        padding: 70px;
+        justify-content: center;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .linea {
+        background-color: var(--primary-color);
+        position: relative;
+    }
+
+    .linea::before,
+    .linea::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+
+        position: absolute;
+        top: -20px;
+        left: -9px;
+    }
+
+    .linea::after {
+        top: 100%;
+        z-index: 1;
+    }
+}

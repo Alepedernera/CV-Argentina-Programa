@@ -1,0 +1,130 @@
+.contacto {
+    background-color: var(--background-navbar-color);
+    color: var(--text-color-mobile);
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 25px;
+    display: grid;
+    gap: 25px;
+}
+
+.contacto p,
+.contacto h2,
+.contacto ul {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-contacto {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.detalles-contacto,
+.formulario-contacto {
+    display: grid;
+    gap: 20px;
+}
+
+.detalles-grupo-contacto,
+.grupo-formulario-contacto {
+    display: grid;
+    gap: 3px;
+}
+
+.label-contacto {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.formulario-contacto textarea {
+    height: auto;
+    resize: vertical;
+}
+
+.enviar-formulario-contacto {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    background-color: var(--text-color-navbar);
+    color:var(--text-color);
+    font-weight: 500;
+    
+    cursor: pointer;
+}
+
+.enviar-formulario-contacto:hover {
+    filter: brightness(80%);
+    border: outset var(--navbar-shallow-color);
+}
+
+.lista-social {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.lista-social img:hover {
+    box-shadow: 0 6px 8px var(--navbar-shallow-color);
+    filter: drop-shadow(0 0 20px var(--menu-mobile-background-color));
+}
+
+@media (min-width: 950px) {
+    .contacto {
+        font-size: 20px;
+        padding: 70px;
+        max-width: 980px;
+        margin: 0 auto;   
+    }
+    
+    .titulo-contacto {
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .lista-social {
+        justify-content: flex-start;
+    }
+    
+    .lista-social img{
+        height: 35px;
+    }
+
+    .titulo-contacto {
+        grid-area: titulo;
+    }
+
+    .detalles-contacto {
+        grid-area: detalles;
+    }
+
+    .formulario-contacto {
+        grid-area: formulario;
+    }
+
+    .social {
+        grid-area: social;
+    }
+
+    .contacto {
+        grid:
+          "titulo   formulario" 
+          "detalles formulario" 
+          "social   formulario" /
+          1fr       1fr;
+        align-items: start;
+    }
+}
