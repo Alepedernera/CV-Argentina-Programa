@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Integrador</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="habilidades.css">
+    <link rel="stylesheet" href="experiencia.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <script defer src="JavaScript/app.js"></script>
+</head>
+<body>
+    <header class="encabezado">
+       <nav class="barra_navegacion">
+        <a href="#" class="logo">
+            <img src="img/Ale1.jpg" alt="foto de perfil" height="90px">
+            <div class="Nombre-nav">
+                <p><strong>Alejandro Pedernera</strong><br/>
+                <em>Web Developer</em></p>
+            </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+            <img src="img/menu1.png" alt="abrir menú" height="45px">
+        </button>
+        <ul class="menu">
+            <button class="close-menu" aria-label="Cerrar menú">
+                <img src="img/icono-cerrar.png" alt="cerrar menú" height="35px">
+            </button>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>            
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+       </nav> 
+    </header>
+    <main>
+        <div class="padding-horizontal padding-vertical">
+          <section class="perfil" id="perfil">
+        <div class="perfil-info">
+            <h1 class="perfil-titulo">Hola, soy <br/>Alejandro Pedernera</h1>
+            <p class="detalles-del-perfil">
+                Entrenador personal y estudiante entusiasta de programación
+                orientado al desarrollo de páginas web (<em>Frontend</em>)
+                y aplicaciones móviles.
+            </p>
+            <button class="perfil-btn">
+                Descargar CV
+            </button>
+        </div>
+          </section>
+        </div>
+
+        <div class="padding-horizontal padding-vertical">
+          <section class="habilidades" id="habilidades">
+            <img src="img/wave.svg" alt="division" class="division1">
+            <div class="cuerpo-habilidades">
+                <h2 class="titulo-habilidades">Habilidades</h2>
+                <div class="iconos-habilidades">
+                    <img src="img/html5.png" alt="html5 logo" id="html5-icon">
+                    <img src="img/css3.png" alt="css3 logo" id="css-icon">
+                    <img src="img/js.png" alt="javascript logo" id="javascript-icon">
+                </div>
+            </div>
+            <img src="img/wave.svg" alt="division" class="division2">
+          </section>
+        </div>
+
+        <div class="padding-horizontal padding-vertical">
+          <section class="experiencia" id="experiencia">
+            <div class="body-experiencia">
+                <h2 class="titulo-experiencia">Experiencia</h2>
+                <div class="grid-experiencia">
+                    <div class="vacio"></div>
+                    <div class="linea"></div>
+                    <div class="experiencia">
+                        <div class="experiencia-fecha">2020-2023</div>
+                        <div class="experiencia-compañia">Ingen Company</div>
+                        <div class="experiencia-posicion"><em>Junior Web Developer</em></div>
+                        <div class="experiencia-descripcion">Desarrollador de la interfaz del usuario
+                            de la página web y aplicación para celulares de Ingen Company.</div>
+                    </div>
+                    <div class="experiencia experiencia_izq">
+                        <div class="experiencia-fecha">2015-2020</div>
+                        <div class="experiencia-compañia">Gaudium Gimnasio</div>
+                        <div class="experiencia-posicion"><em>Encargado y profesor del gimnasio</em></div>
+                        <div class="experiencia-descripcion">Creación y planificación de rutinas de entrenamiento para las personas
+                            acorde a sus objetivos, gustos y tiempo disponible.</div>
+                    </div>
+                    <div class="linea"></div>
+                    <div class="vacio"></div>
+                    <div class="vacio"></div>
+                    <div class="linea"></div>
+                    <div class="experiencia">
+                        <div class="experiencia-fecha">2010-2020</div>
+                        <div class="experiencia-compañia">Independiente D.S.C</div>
+                        <div class="experiencia-posicion"><em>Preparador físico de diferentes equipos</em></div>
+                        <div class="experiencia-descripcion">Preparación física de los equipos de 1era división de
+                            Fútbol, Basquet y Voley. Ayudando a mejorar el rendimiento deportivo de dichos equipos para el cumplimiento
+                            de los objetivos espablecidos en la temporada de competición.</div>
+                    </div>
+                </div>
+            </div>
+          </section>   
+        </div>
+
+        <div class="padding-horizontal padding-vertical">
+          <section class="contacto" id="contacto">
+            <h2 class="titulo-contacto">Contacto</h2>
+            <div class="detalles-contacto">
+                <div class="detalles-grupo-contacto">
+                    <p class="label-contacto">Dirección</p>
+                    <p class="texto-contacto">Oliva-Córdoba, Argentina</p>
+                </div>
+                <div class="detalles-grupo-contacto">
+                    <p class="label-contacto">Email</p>
+                    <p class="texto-contacto">alejandropedernera23@hotmail.com</p>
+                </div>
+                <div class="detalles-grupo-contacto">
+                    <p class="texto-contacto">Ingrese su mensaje y le responderé agradecido.</p>
+                </div>
+            </div>
+            <form class="formulario-contacto">
+                <div class="grupo-formulario-contacto">
+                    <label for="nombre">Nombre</label>
+                    <input required type="text" name="nombre" id="nombre">
+                </div>
+                <div class="grupo-formulario-contacto">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div class="grupo-formulario-contacto">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea required name="mensaje" id="mensaje" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="enviar-formulario-contacto">Enviar</button>
+            </form>
+            <nav class="social">
+                <ul class="lista-social">
+                    <li>
+                        <a href="https://www.facebook.com/alejandropedernera23" target="_blank">
+                            <img src="img/fb-icon.svg" alt="perfil facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/pedernera_ale/" target="_blank">
+                            <img src="img/insta-icon.svg" alt="perfil instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Alepedernera23" target="_blank">
+                            <img src="img/twitter-icon.svg" alt="perfil twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://outlook.live.com/mail/0/alejandropedernera23/" target="_blank">
+                            <img src="img/email-icon.svg" alt="perfil email">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/alepedernera" target="_blank">
+                            <img src="img/github-icon.svg" alt="perfil github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/alejandro-pedernera" target="_blank">
+                            <img src="img/linkedin-icon.svg" alt="perfil linkedin">
+                        </a>
+                    </li>   
+                </ul>
+            </nav>
+          </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="padding-horizontal padding-vertical"></div>
+        <p class="pie de pagina">Página creada por <em></em>©Alejandro Pedernera</em></p>
+    </footer>
+</body>
+</html>
